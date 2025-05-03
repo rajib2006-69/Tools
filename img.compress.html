@@ -759,10 +759,17 @@
         <div class="ad-container">
             <div>
                 <div class="ad-label">Advertisement</div>
-                <!-- AdSense code would go here -->
-                <div style="background: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px;">
-                    <p>AdSense Ad</p>
-                </div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2102167174456955"></script>
+                <!-- ImageCompressor_Top_Banner -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2102167174456955"
+                     data-ad-slot="YOUR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
         
@@ -917,10 +924,17 @@
         <div class="ad-container">
             <div>
                 <div class="ad-label">Advertisement</div>
-                <!-- AdSense code would go here -->
-                <div style="background: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px;">
-                    <p>AdSense Ad</p>
-                </div>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2102167174456955"></script>
+                <!-- ImageCompressor_Middle_Banner -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2102167174456955"
+                     data-ad-slot="YOUR_AD_SLOT_ID_2"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </div>
@@ -1153,27 +1167,3 @@
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
                 
-                // Show download toast
-                showToast('Download started!', 'success');
-            }
-            
-            function resetTool() {
-                selectedFile = null;
-                compressedBlob = null;
-                
-                // Reset UI
-                fileInput.value = '';
-                compressBtn.disabled = true;
-                resultsSection.style.display = 'none';
-                filePreview.style.display = 'none';
-                
-                // Reset upload area text
-                uploadArea.querySelector('.upload-text').textContent = 'Drag & Drop your image here';
-                uploadArea.querySelector('.upload-subtext').textContent = 'or click to browse files (max 10MB)';
-                
-                // Reset images
-                previewImage.src = '';
-                originalImage.src = '';
-                compressedImage.src = '';
-                originalInfo.textContent = '-';
-                compressedInfo
